@@ -9,6 +9,6 @@ genai.configure(api_key=GOOGLE_API_KEY)
 user_input = st.text_input("Ask me anything:")
 
 if st.button("Send"):
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.5-flash')
     response = model.generate_content(user_input)
     st.write(response.text)
